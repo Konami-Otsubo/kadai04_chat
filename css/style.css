@@ -1,0 +1,136 @@
+body {
+    background-image: url('/img/background-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+}
+
+#container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    background-color: rgb(243, 215, 56);
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: max-content;
+    margin: 0 auto 20px auto;
+}
+
+#input-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#photo-section {
+    flex: 1;
+}
+
+#photo-section img {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#details-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* 入力欄の間隔を狭く */
+}
+
+#details-section div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#date-time {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    background-color: #f5f5f5;    
+    resize: none;
+    overflow-wrap: break-word;
+    height: 20px;
+}
+
+#veg-name {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    background-color: #f5f5f5;
+    resize: none;
+    overflow-wrap: break-word;
+    height: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    background-color: #f5f5f5;
+    line-height: 1.5; /* 行間を広く設定 */
+    resize: none;
+    overflow-wrap: break-word;
+    height: 50px;
+}
+
+label {
+    width: 100px;
+    font-size: 1.1em;
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button {
+    width: 100px;
+    padding: 8px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-right: 3px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#button-section, #save-button-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#output {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    overflow: auto;
+    height: 300px;
+}
+
+#output p {
+    margin-top: 5px;
+}
